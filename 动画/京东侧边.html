@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin :0;
+            padding: 0;
+
+        }
+
+     ul li{
+       list-style: none;
+     }
+
+     .nav{
+         margin: 100px auto;
+         width: 30px;
+     }
+
+     .nav li {
+         position: relative;
+        width:30px;
+        height: 30px;
+        background-color:pink;
+        margin-bottom: 10px;
+     }
+
+     .nav li div{
+         position: absolute;
+         top: 0;
+         right: 0;
+         /* width: 30px; */
+         width: 0;
+         height: 30px;;
+         transition: all .5s;
+     }
+
+     .nav li:hover div{
+            width: 100px;
+            background-color: purple;
+z-index: -1;
+     }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav">
+            <li ><div></div></li>
+            <li ><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+        </ul>
+    </div>
+</body>
+</html>

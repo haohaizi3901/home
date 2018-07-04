@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ <style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+    html,body{
+        min-width: 320px;
+        max-width: 540px;
+        font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+        margin: 0 auto;
+    }
+     
+    header{
+         height: 108px;
+     }
+
+     header img{
+         height: 100%;
+         width: auto;
+     }
+     
+
+     nav{
+         padding: 4px;
+         color: #fff;
+     }
+     .row{
+       display: flex;
+       height: 90px;
+      
+       border:1p solid #fff;
+       border-radius: 6px;
+       overflow: hidden;
+     }
+
+      .row div{
+          height: 100%;
+          flex: 1;
+          border: 1px solid #fff;
+          background-color: #FF697A;
+         
+      }
+
+      .row div:nth-child(3){
+          border: 0;
+      }
+
+      .row22{
+           display:flex;
+          flex-direction: column;
+      }
+
+      .row22 div{
+          flex: 1;
+          line-height: 45px;
+          text-align: center;
+      }
+     
+      
+ </style>
+</head>
+<body>
+    <header>
+        <img src="../animal动画/images/banner.jpg">
+    </header>
+    <nav>
+       <div class="row"> 
+           <div>
+             <a> 酒店</a> 
+           </div>
+            <div class="row22">
+                <div>海外酒店</div> 
+                <div>特价酒店</div>
+            </div>
+            <div class="row22">
+                <div>团购</div>
+                <div>同城客栈</div>
+            </div>
+
+       </div>
+
+    </nav>
+</body>
+</html>
